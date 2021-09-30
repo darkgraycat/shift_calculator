@@ -1,6 +1,8 @@
 :root {
   --main-bg: #ddd;
+  --form-bg: #bbb;
   --main-fg: #448;
+  --form-fg: #464;
 }
 
 html, body {
@@ -11,12 +13,31 @@ html, body {
 }
 
 .container {
-  background-color: var(--main-bg);
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.form {}
+.form {
+  margin-top: 20px;
+  padding: 20px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+}
 
-.date_input {}
-.date_result {}
+.date_input {
+  border-radius: 8px;
+  border: 2px solid var(--main-bg);
+  padding: 8px;
+  outline: 0;
+  color: var(--form-fg);
+  font-weight: 900;
+}
+.date_result {
+  margin-left: 20px;
+  font-size: 1.1em;
+  line-height: 2em;
+}
