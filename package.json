@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "dependencies": {},
   "devDependencies": {
     "jest": "^27.2.4",
@@ -13,7 +10,7 @@
     "webpack-cli": "^4.8.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack",
     "start:watch": "webpack --mode development --watch"
   },
